@@ -5,7 +5,7 @@
     <script>
       function prev(e){
         this.setAttribute('action', '?');
-        this.setAttribute('target', '_self');
+        this.setAttribute('target', 'evil_frame');
       }
     </script>
   </head>
@@ -15,6 +15,6 @@
           <input type='hidden' name='code' value='AL'/>
           <input type='hidden' name='country_id' value='1'/>
        </form>
+    <iframe name='evil_frame'></iframe>
   </body>
-  <iframe name='none'></iframe>
 </html>
